@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { ReactComponent as Logo } from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,7 +15,8 @@ function App() {
         <Route>
           <div className="App">
             <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
+              {/* <img src={logo} className="App-logo" alt="logo" /> */}
+              <Logo className="App-logo"/>
               <p>
                 Edit <code>src/App.js</code> and save to reload.
               </p>
