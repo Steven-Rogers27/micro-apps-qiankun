@@ -1,3 +1,5 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -5,7 +7,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './public-path';
 
-function render(props) {
+function render(props?: any) {
   let container = document.getElementById('root');
   if (props && props.container) {
     container = props.container.querySelector('#root');
@@ -26,12 +28,12 @@ export async function bootstrap() {
   console.log('ReactMicroApp bootstrapped');
 }
 
-export async function mount(props) {
+export async function mount(props?: any) {
   console.log('ReactMicroApp mount', props);
   render(props);
 }
 
-export async function unmount(props) {
+export async function unmount(props?: any) {
   console.log('ReactMicroApp unmount', props);
   ReactDOM.unmountComponentAtNode(props.container ? props.container.querySelector('#root') : document.getElementById('root'));
 }

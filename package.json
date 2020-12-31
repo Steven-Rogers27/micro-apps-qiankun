@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn lerna bootstrap --ignore-prepublish",
+    "publish": "yarn lerna publish",
+    "start-pkg": "yarn lerna run start --parallel",
+    "build-pkg": "yarn lerna run build",
+    "test-pkg": "yarn lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

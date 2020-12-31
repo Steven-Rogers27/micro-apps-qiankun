@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "target": "es5",
     "lib": [
@@ -18,7 +19,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/qiankun/es"
+    ],
+    "baseUrl": "."
   },
   "include": [
     "src"

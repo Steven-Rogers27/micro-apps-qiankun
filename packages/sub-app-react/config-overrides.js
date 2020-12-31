@@ -23,6 +23,7 @@ module.exports = {
         'Access-Control-Allow-Origin': '*',
       };
       config.historyApiFallback = true;
+      config.open = false;
       return config;
     };
   },
