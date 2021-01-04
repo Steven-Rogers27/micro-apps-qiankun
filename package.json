@@ -9,6 +9,7 @@
     "test-pkg": "yarn lerna run test"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "weisun-cli": "^1.0.2"
   }
 }

@@ -1,7 +1,7 @@
 const apps = [
   {
     name: 'ReactMicroApp',
-    entry: '//localhost:10100',
+    entry: '//localhost:3001',
     container: '#sub-app',
     activeRule: '/react',
   },

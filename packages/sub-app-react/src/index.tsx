@@ -2,8 +2,10 @@ import 'react-app-polyfill/ie9';
 import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider, } from 'react-redux';
 import './index.css';
 import App from './App';
+import store from './store';
 import reportWebVitals from './reportWebVitals';
 import './public-path';
 
@@ -13,9 +15,11 @@ function render(props?: any) {
     container = props.container.querySelector('#root');
   }
   ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
+    <Provider store={store}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+    </Provider>,
     container,
   );
 }
