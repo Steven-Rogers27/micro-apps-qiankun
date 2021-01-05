@@ -10,6 +10,7 @@ module.exports = {
   devServer: function(configFunction) {
     return function(proxy, allowedHosts) {
       const config = configFunction(proxy, allowedHosts);
+      config.open = false;
       return config;
     };
   },
