@@ -1,4 +1,7 @@
 const path = require('path');
+const {
+  override,
+} = require('customize-cra');
 
 module.exports = {
   webpack: function(config, env) {
