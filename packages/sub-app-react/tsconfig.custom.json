@@ -22,11 +22,10 @@
     "typeRoots": [
       "./node_modules/@types",
       "./src/types",
-      "./node_modules/qiankun/es"
     ],
     "baseUrl": ".",
     "paths": {
-      "@": ["./src"]
+      "@/*": ["./src"]
     }
   },
   "include": [
